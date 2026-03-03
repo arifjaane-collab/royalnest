@@ -5,67 +5,116 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>RoyalNest Furniture</title>
 
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+
 <style>
 body {
     margin: 0;
-    font-family: Arial, sans-serif;
-    background-color: #f5f5f5;
+    font-family: 'Poppins', sans-serif;
+    background-color: #f8f5f2;
 }
+
 header {
-    background: #3e2723;
+    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
+    url('https://images.unsplash.com/photo-1586023492125-27b2c045efd7');
+    background-size: cover;
+    background-position: center;
     color: white;
-    padding: 20px;
     text-align: center;
+    padding: 80px 20px;
 }
+
+header h1 {
+    font-size: 42px;
+    margin-bottom: 10px;
+}
+
+header p {
+    font-size: 18px;
+}
+
 nav {
+    background: #2e1f1b;
     text-align: center;
-    background: #5d4037;
-    padding: 10px;
+    padding: 15px;
 }
+
 nav a {
     color: white;
     text-decoration: none;
-    margin: 0 15px;
-    font-weight: bold;
+    margin: 0 20px;
+    font-weight: 500;
 }
+
 section {
-    padding: 40px 20px;
+    padding: 60px 20px;
     text-align: center;
 }
+
 .products {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 20px;
+    gap: 25px;
 }
+
 .card {
     background: white;
-    width: 250px;
-    padding: 15px;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    width: 280px;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+    transition: 0.3s;
 }
+
+.card:hover {
+    transform: translateY(-10px);
+}
+
 .card img {
     width: 100%;
-    border-radius: 10px;
+    height: 200px;
+    object-fit: cover;
 }
+
+.card h3 {
+    margin: 15px 0 5px;
+}
+
+.card p {
+    font-weight: bold;
+    color: #6d4c41;
+}
+
 .whatsapp-btn {
+    display: inline-block;
+    margin: 15px 0 20px;
+    padding: 10px 20px;
     background: #25D366;
     color: white;
-    padding: 10px 15px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
+    border-radius: 30px;
     text-decoration: none;
-    display: inline-block;
-    margin-top: 10px;
-    font-weight: bold;
+    font-weight: 500;
 }
+
 footer {
-    background: #3e2723;
+    background: #2e1f1b;
     color: white;
     text-align: center;
-    padding: 15px;
+    padding: 20px;
+}
+
+/* Floating WhatsApp */
+.float {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: #25D366;
+    color: white;
+    padding: 15px 18px;
+    border-radius: 50%;
+    font-size: 22px;
+    text-decoration: none;
 }
 </style>
 </head>
@@ -73,50 +122,38 @@ footer {
 
 <header>
 <h1>RoyalNest Furniture</h1>
-<p>Premium Quality Furniture at Best Price</p>
+<p>Luxury & Modern Furniture Collection</p>
 </header>
 
 <nav>
-<a href="#home">Home</a>
+<a href="#">Home</a>
 <a href="#products">Products</a>
 <a href="#contact">Contact</a>
 </nav>
 
-<section id="home">
-<h2>Welcome to RoyalNest</h2>
-<p>Stylish Sofa | Modern Bed | Luxury Chairs | Dining Sets</p>
-</section>
-
 <section id="products">
-<h2>Our Products</h2>
+<h2>Our Premium Collection</h2>
 <div class="products">
 
 <div class="card">
-<img src="https://via.placeholder.com/250x180" alt="Sofa">
+<img src="https://images.unsplash.com/photo-1582582494700-5b87d8b8a4c6">
 <h3>Luxury Sofa</h3>
 <p>₹15,999</p>
-<a class="whatsapp-btn" href="https://wa.me/919876543210?text=Hello%20I%20want%20to%20order%20Luxury%20Sofa" target="_blank">Order on WhatsApp</a>
+<a class="whatsapp-btn" href="https://wa.me/919876543210?text=I want Luxury Sofa" target="_blank">Order Now</a>
 </div>
 
 <div class="card">
-<img src="https://via.placeholder.com/250x180" alt="Bed">
+<img src="https://images.unsplash.com/photo-1615874959474-d609969a20ed">
 <h3>King Size Bed</h3>
 <p>₹21,999</p>
-<a class="whatsapp-btn" href="https://wa.me/919876543210?text=Hello%20I%20want%20to%20order%20King%20Size%20Bed" target="_blank">Order on WhatsApp</a>
+<a class="whatsapp-btn" href="https://wa.me/919876543210?text=I want King Size Bed" target="_blank">Order Now</a>
 </div>
 
 <div class="card">
-<img src="https://via.placeholder.com/250x180" alt="Chair">
-<h3>Wooden Chair</h3>
-<p>₹3,999</p>
-<a class="whatsapp-btn" href="https://wa.me/919876543210?text=Hello%20I%20want%20to%20order%20Wooden%20Chair" target="_blank">Order on WhatsApp</a>
-</div>
-
-<div class="card">
-<img src="https://via.placeholder.com/250x180" alt="Dining">
-<h3>Dining Table Set</h3>
+<img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c">
+<h3>Dining Set</h3>
 <p>₹18,999</p>
-<a class="whatsapp-btn" href="https://wa.me/919876543210?text=Hello%20I%20want%20to%20order%20Dining%20Table%20Set" target="_blank">Order on WhatsApp</a>
+<a class="whatsapp-btn" href="https://wa.me/919876543210?text=I want Dining Set" target="_blank">Order Now</a>
 </div>
 
 </div>
@@ -126,12 +163,13 @@ footer {
 <h2>Contact Us</h2>
 <p>📞 +91 9876543210</p>
 <p>📍 Pune, Maharashtra</p>
-<p>📧 royalnest@gmail.com</p>
 </section>
 
 <footer>
-<p>© 2026 RoyalNest Furniture | All Rights Reserved</p>
+© 2026 RoyalNest Furniture | All Rights Reserved
 </footer>
+
+<a href="https://wa.me/919876543210" class="float" target="_blank">💬</a>
 
 </body>
 </html>
