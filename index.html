@@ -1,143 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>ARIF Furniture</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<style>
+body {
+font-family: Arial, sans-serif;
+margin: 0;
+background: #f5f5f5;
+}
+
+header {
+background: #222;
+color: white;
+text-align: center;
+padding: 20px;
+font-size: 24px;
+}
+
+.products {
+display: grid;
+grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+gap: 20px;
+padding: 20px;
+}
+
+.card {
+background: white;
+padding: 15px;
+border-radius: 10px;
+box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+text-align: center;
+}
+
+.card img {
+width: 100%;
+height: 250px;
+object-fit: cover;
+border-radius: 10px;
+}
+
+.card h3 {
+margin: 10px 0 5px;
+}
+
+.card p {
+font-size: 18px;
+font-weight: bold;
+color: #444;
+}
+
+.whatsapp-btn {
+display: inline-block;
+margin-top: 10px;
+padding: 8px 15px;
+background: green;
+color: white;
+text-decoration: none;
+border-radius: 5px;
+}
+</style>
+</head>
+
+<body>
+
+<header>ARIF Premium Sofa Collection</header>
+
 <div class="products">
 
-<div class="card">
-<img src="https://picsum.photos/400/300?random=101">
-<h3>Classic 1 Seater Sofa</h3>
-<p>₹8,999</p>
-<a class="whatsapp-btn" href="https://wa.me/918888239637?text=I want Classic 1 Seater Sofa" target="_blank">Order Now</a>
-</div>
+<!-- 20 Sofa Cards -->
 
-<div class="card">
-<img src="https://picsum.photos/400/300?random=102">
-<h3>Premium 2 Seater Sofa</h3>
-<p>₹14,499</p>
-<a class="whatsapp-btn" href="https://wa.me/918888239637?text=I want Premium 2 Seater Sofa" target="_blank">Order Now</a>
-</div>
+<script>
+const sofas = [
+["Classic 1 Seater Sofa","8999"],
+["Premium 2 Seater Sofa","14499"],
+["Luxury 3 Seater Sofa","19999"],
+["Royal 4 Seater Sofa","26999"],
+["Modern L-Shape Sofa","32999"],
+["Wooden Frame Sofa","17499"],
+["Fabric Designer Sofa","21999"],
+["Velvet Luxury Sofa","24499"],
+["Compact Apartment Sofa","13999"],
+["Recliner Sofa Set","34999"],
+["Leather 3+1+1 Sofa Set","39999"],
+["Minimalist Grey Sofa","18499"],
+["Sectional Corner Sofa","29999"],
+["Chesterfield Sofa","44999"],
+["Luxury U-Shape Sofa","52999"],
+["Compact 2+2 Sofa Set","22499"],
+["Premium Wooden Sofa Set","27999"],
+["Designer Blue Sofa","23999"],
+["Luxury Brown Sofa Set","31499"],
+["Elite Premium Sofa Set","48999"]
+];
 
+sofas.forEach(sofa => {
+document.write(`
 <div class="card">
-<img src="https://picsum.photos/400/300?random=103">
-<h3>Luxury 3 Seater Sofa</h3>
-<p>₹19,999</p>
-<a class="whatsapp-btn" href="https://wa.me/918888239637?text=I want Luxury 3 Seater Sofa" target="_blank">Order Now</a>
+<img src="https://source.unsplash.com/400x400/?sofa,${sofa[0]}" alt="${sofa[0]}">
+<h3>${sofa[0]}</h3>
+<p>₹${sofa[1]}</p>
+<a class="whatsapp-btn" href="https://wa.me/918888239637?text=I want ${sofa[0]}" target="_blank">Order Now</a>
 </div>
-
-<div class="card">
-<img src="https://picsum.photos/400/300?random=104">
-<h3>Royal 4 Seater Sofa</h3>
-<p>₹26,999</p>
-<a class="whatsapp-btn" href="https://wa.me/918888239637?text=I want Royal 4 Seater Sofa" target="_blank">Order Now</a>
-</div>
-
-<div class="card">
-<img src="https://picsum.photos/400/300?random=105">
-<h3>Modern L-Shape Sofa</h3>
-<p>₹32,999</p>
-<a class="whatsapp-btn" href="https://wa.me/918888239637?text=I want Modern L-Shape Sofa" target="_blank">Order Now</a>
-</div>
-
-<div class="card">
-<img src="https://picsum.photos/400/300?random=106">
-<h3>Wooden Frame Sofa</h3>
-<p>₹17,499</p>
-<a class="whatsapp-btn" href="https://wa.me/918888239637?text=I want Wooden Frame Sofa" target="_blank">Order Now</a>
-</div>
-
-<div class="card">
-<img src="https://picsum.photos/400/300?random=107">
-<h3>Fabric Designer Sofa</h3>
-<p>₹21,999</p>
-<a class="whatsapp-btn" href="https://wa.me/918888239637?text=I want Fabric Designer Sofa" target="_blank">Order Now</a>
-</div>
-
-<div class="card">
-<img src="https://picsum.photos/400/300?random=108">
-<h3>Velvet Luxury Sofa</h3>
-<p>₹24,499</p>
-<a class="whatsapp-btn" href="https://wa.me/918888239637?text=I want Velvet Luxury Sofa" target="_blank">Order Now</a>
-</div>
-
-<div class="card">
-<img src="https://picsum.photos/400/300?random=109">
-<h3>Compact Apartment Sofa</h3>
-<p>₹13,999</p>
-<a class="whatsapp-btn" href="https://wa.me/918888239637?text=I want Compact Apartment Sofa" target="_blank">Order Now</a>
-</div>
-
-<div class="card">
-<img src="https://picsum.photos/400/300?random=110">
-<h3>Recliner Sofa Set</h3>
-<p>₹34,999</p>
-<a class="whatsapp-btn" href="https://wa.me/918888239637?text=I want Recliner Sofa Set" target="_blank">Order Now</a>
-</div>
-
-<div class="card">
-<img src="https://picsum.photos/400/300?random=111">
-<h3>Leather 3+1+1 Sofa Set</h3>
-<p>₹39,999</p>
-<a class="whatsapp-btn" href="https://wa.me/918888239637?text=I want Leather 3+1+1 Sofa Set" target="_blank">Order Now</a>
-</div>
-
-<div class="card">
-<img src="https://picsum.photos/400/300?random=112">
-<h3>Minimalist Grey Sofa</h3>
-<p>₹18,499</p>
-<a class="whatsapp-btn" href="https://wa.me/918888239637?text=I want Minimalist Grey Sofa" target="_blank">Order Now</a>
-</div>
-
-<div class="card">
-<img src="https://picsum.photos/400/300?random=113">
-<h3>Sectional Corner Sofa</h3>
-<p>₹29,999</p>
-<a class="whatsapp-btn" href="https://wa.me/918888239637?text=I want Sectional Corner Sofa" target="_blank">Order Now</a>
-</div>
-
-<div class="card">
-<img src="https://picsum.photos/400/300?random=114">
-<h3>Chesterfield Sofa</h3>
-<p>₹44,999</p>
-<a class="whatsapp-btn" href="https://wa.me/918888239637?text=I want Chesterfield Sofa" target="_blank">Order Now</a>
-</div>
-
-<div class="card">
-<img src="https://picsum.photos/400/300?random=115">
-<h3>Luxury U-Shape Sofa</h3>
-<p>₹52,999</p>
-<a class="whatsapp-btn" href="https://wa.me/918888239637?text=I want Luxury U-Shape Sofa" target="_blank">Order Now</a>
-</div>
-
-<div class="card">
-<img src="https://picsum.photos/400/300?random=116">
-<h3>Compact 2+2 Sofa Set</h3>
-<p>₹22,499</p>
-<a class="whatsapp-btn" href="https://wa.me/918888239637?text=I want Compact 2+2 Sofa Set" target="_blank">Order Now</a>
-</div>
-
-<div class="card">
-<img src="https://picsum.photos/400/300?random=117">
-<h3>Premium Wooden Sofa Set</h3>
-<p>₹27,999</p>
-<a class="whatsapp-btn" href="https://wa.me/918888239637?text=I want Premium Wooden Sofa Set" target="_blank">Order Now</a>
-</div>
-
-<div class="card">
-<img src="https://picsum.photos/400/300?random=118">
-<h3>Designer Blue Sofa</h3>
-<p>₹23,999</p>
-<a class="whatsapp-btn" href="https://wa.me/918888239637?text=I want Designer Blue Sofa" target="_blank">Order Now</a>
-</div>
-
-<div class="card">
-<img src="https://picsum.photos/400/300?random=119">
-<h3>Luxury Brown Sofa Set</h3>
-<p>₹31,499</p>
-<a class="whatsapp-btn" href="https://wa.me/918888239637?text=I want Luxury Brown Sofa Set" target="_blank">Order Now</a>
-</div>
-
-<div class="card">
-<img src="https://picsum.photos/400/300?random=120">
-<h3>Elite Premium Sofa Set</h3>
-<p>₹48,999</p>
-<a class="whatsapp-btn" href="https://wa.me/918888239637?text=I want Elite Premium Sofa Set" target="_blank">Order Now</a>
-</div>
+`);
+});
+</script>
 
 </div>
+
+</body>
+</html>
