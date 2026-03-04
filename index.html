@@ -1,267 +1,143 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>RoyalNest Furniture</title>
-
-<!-- Open Graph Meta Tags -->
-<meta property="og:title" content="RoyalNest Furniture">
-<meta property="og:description" content="Premium Luxury Furniture Collection in Pune. Order directly on WhatsApp.">
-<meta property="og:image" content="https://images.unsplash.com/photo-1586023492125-27b2c045efd7?auto=format&fit=crop&w=1200&q=80">
-<meta property="og:url" content="https://arifjaane-collab.github.io/royalnest/">
-<meta property="og:type" content="website">
-
-<meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="RoyalNest Furniture">
-<meta name="twitter:description" content="Premium Luxury Furniture Collection in Pune.">
-<meta name="twitter:image" content="https://images.unsplash.com/photo-1586023492125-27b2c045efd7?auto=format&fit=crop&w=1200&q=80">
-
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
-
-<style>
-body {
-    margin: 0;
-    font-family: 'Poppins', sans-serif;
-    background-color: #f8f5f2;
-}
-
-nav {
-    background: #2e1f1b;
-    text-align: center;
-    padding: 15px;
-}
-
-nav a {
-    color: white;
-    text-decoration: none;
-    margin: 0 20px;
-    font-weight: 500;
-}
-
-/* Hero Section */
-header {
-    position: relative;
-    padding: 0;
-}
-header img {
-    width: 100%;
-    height: 400px;
-    object-fit: cover;
-}
-header .hero-text {
-    position: absolute;
-    top: 150px;
-    width: 100%;
-    text-align: center;
-    color: white;
-}
-
-/* Gallery Slider */
-.slider {
-  position: relative;
-  max-width: 90%;
-  margin: auto;
-  overflow: hidden;
-}
-
-.slide {
-  width: 100%;
-  display: none;
-  text-align: center;
-}
-
-.slide img {
-  max-width: 100%;
-  display: block;
-  margin: auto;
-  border-radius: 15px;
-}
-
-.active {
-  display: block;
-}
-
-.whatsapp-btn {
-  display: inline-block;
-  margin: 10px 0 30px;
-  padding: 10px 20px;
-  background: #25D366;
-  color: white;
-  border-radius: 30px;
-  text-decoration: none;
-  font-weight: 500;
-}
-
-/* Products */
-section {
-    padding: 60px 20px;
-    text-align: center;
-}
-
-.products {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 25px;
-}
-
-.card {
-    background: white;
-    width: 280px;
-    border-radius: 15px;
-    overflow: hidden;
-    box-shadow: 0 6px 15px rgba(0,0,0,0.1);
-    transition: 0.3s;
-}
-
-.card:hover {
-    transform: translateY(-10px);
-}
-
-.card img {
-    width: 100%;
-    height: 200px;
-    object-fit: cover;
-}
-
-.card h3 {
-    margin: 15px 0 5px;
-}
-
-.card p {
-    font-weight: bold;
-    color: #6d4c41;
-}
-
-footer {
-    background: #2e1f1b;
-    color: white;
-    text-align: center;
-    padding: 20px;
-}
-
-/* Floating WhatsApp */
-.float {
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    background: #25D366;
-    color: white;
-    padding: 15px 18px;
-    border-radius: 50%;
-    font-size: 22px;
-    text-decoration: none;
-}
-</style>
-</head>
-
-<body>
-
-<!-- Hero Section -->
-<header>
-<a href="#products">
-<img src="https://images.unsplash.com/photo-1586023492125-27b2c045efd7" alt="Luxury Furniture Hero">
-</a>
-<div class="hero-text">
-<h1 style="font-size:40px;">RoyalNest Furniture</h1>
-<p>Luxury & Modern Furniture Collection</p>
-</div>
-</header>
-
-<!-- Navigation -->
-<nav>
-<a href="#">Home</a>
-<a href="#products">Products</a>
-<a href="#contact">Contact</a>
-</nav>
-
-<!-- Gallery Slider (4 Sofas) -->
-<section id="gallery">
-<h2 style="text-align:center; margin-top:50px;">Luxury Sofa Collection</h2>
-
-<div class="slider">
-  <div class="slide active">
-    <img src="https://images.unsplash.com/photo-1586023492125-27b2c045efd7?auto=format&fit=crop&w=1200&q=80" alt="Luxury Sofa 1">
-    <a class="whatsapp-btn" href="https://wa.me/918888239637?text=I want Luxury Sofa 1" target="_blank">Order Now</a>
-  </div>
-
-  <div class="slide">
-    <img src="https://images.unsplash.com/photo-1615874959474-d609969a20ed?auto=format&fit=crop&w=1200&q=80" alt="Luxury Sofa 2">
-    <a class="whatsapp-btn" href="https://wa.me/918888239637?text=I want Luxury Sofa 2" target="_blank">Order Now</a>
-  </div>
-
-  <div class="slide">
-    <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1200&q=80" alt="Luxury Sofa 3">
-    <a class="whatsapp-btn" href="https://wa.me/918888239637?text=I want Luxury Sofa 3" target="_blank">Order Now</a>
-  </div>
-
-  <div class="slide">
-    <img src="https://images.unsplash.com/photo-1582582494700-5b87d8b8a4c6?auto=format&fit=crop&w=1200&q=80" alt="Luxury Sofa 4">
-    <a class="whatsapp-btn" href="https://wa.me/918888239637?text=I want Luxury Sofa 4" target="_blank">Order Now</a>
-  </div>
-</div>
-</section>
-
-<!-- Products Section -->
-<section id="products">
-<h2>Our Premium Collection</h2>
 <div class="products">
 
 <div class="card">
-<img src="https://images.unsplash.com/photo-1582582494700-5b87d8b8a4c6">
-<h3>Luxury Sofa</h3>
-<p>₹15,999</p>
-<a class="whatsapp-btn" href="https://wa.me/918888239637?text=Hello%20I%20want%20Luxury%20Sofa" target="_blank">Order Now</a>
+<img src="https://picsum.photos/400/300?random=11">
+<h3>Classic 1 Seater Sofa</h3>
+<p>₹8,999</p>
+<a class="whatsapp-btn" href="https://wa.me/918888239637?text=I want Classic 1 Seater Sofa" target="_blank">Order Now</a>
 </div>
 
 <div class="card">
-<img src="https://images.unsplash.com/photo-1615874959474-d609969a20ed">
-<h3>King Size Bed</h3>
+<img src="https://picsum.photos/400/300?random=12">
+<h3>Premium 2 Seater Sofa</h3>
+<p>₹14,499</p>
+<a class="whatsapp-btn" href="https://wa.me/918888239637?text=I want Premium 2 Seater Sofa" target="_blank">Order Now</a>
+</div>
+
+<div class="card">
+<img src="https://picsum.photos/400/300?random=13">
+<h3>Luxury 3 Seater Sofa</h3>
+<p>₹19,999</p>
+<a class="whatsapp-btn" href="https://wa.me/918888239637?text=I want Luxury 3 Seater Sofa" target="_blank">Order Now</a>
+</div>
+
+<div class="card">
+<img src="https://picsum.photos/400/300?random=14">
+<h3>Royal 4 Seater Sofa</h3>
+<p>₹26,999</p>
+<a class="whatsapp-btn" href="https://wa.me/918888239637?text=I want Royal 4 Seater Sofa" target="_blank">Order Now</a>
+</div>
+
+<div class="card">
+<img src="https://picsum.photos/400/300?random=15">
+<h3>Modern L-Shape Sofa</h3>
+<p>₹32,999</p>
+<a class="whatsapp-btn" href="https://wa.me/918888239637?text=I want Modern L-Shape Sofa" target="_blank">Order Now</a>
+</div>
+
+<div class="card">
+<img src="https://picsum.photos/400/300?random=16">
+<h3>Wooden Frame Sofa</h3>
+<p>₹17,499</p>
+<a class="whatsapp-btn" href="https://wa.me/918888239637?text=I want Wooden Frame Sofa" target="_blank">Order Now</a>
+</div>
+
+<div class="card">
+<img src="https://picsum.photos/400/300?random=17">
+<h3>Fabric Designer Sofa</h3>
 <p>₹21,999</p>
-<a class="whatsapp-btn" href="https://wa.me/918888239637?text=Hello%20I%20want%20King%20Size%20Bed" target="_blank">Order Now</a>
+<a class="whatsapp-btn" href="https://wa.me/918888239637?text=I want Fabric Designer Sofa" target="_blank">Order Now</a>
 </div>
 
 <div class="card">
-<img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c">
-<h3>Dining Set</h3>
-<p>₹18,999</p>
-<a class="whatsapp-btn" href="https://wa.me/918888239637?text=Hello%20I%20want%20Dining%20Set" target="_blank">Order Now</a>
+<img src="https://picsum.photos/400/300?random=18">
+<h3>Velvet Luxury Sofa</h3>
+<p>₹24,499</p>
+<a class="whatsapp-btn" href="https://wa.me/918888239637?text=I want Velvet Luxury Sofa" target="_blank">Order Now</a>
+</div>
+
+<div class="card">
+<img src="https://picsum.photos/400/300?random=19">
+<h3>Compact Apartment Sofa</h3>
+<p>₹13,999</p>
+<a class="whatsapp-btn" href="https://wa.me/918888239637?text=I want Compact Apartment Sofa" target="_blank">Order Now</a>
+</div>
+
+<div class="card">
+<img src="https://picsum.photos/400/300?random=20">
+<h3>Recliner Sofa Set</h3>
+<p>₹34,999</p>
+<a class="whatsapp-btn" href="https://wa.me/918888239637?text=I want Recliner Sofa Set" target="_blank">Order Now</a>
+</div>
+
+<div class="card">
+<img src="https://picsum.photos/400/300?random=21">
+<h3>Leather 3+1+1 Sofa Set</h3>
+<p>₹39,999</p>
+<a class="whatsapp-btn" href="https://wa.me/918888239637?text=I want Leather Sofa Set" target="_blank">Order Now</a>
+</div>
+
+<div class="card">
+<img src="https://picsum.photos/400/300?random=22">
+<h3>Minimalist Grey Sofa</h3>
+<p>₹18,499</p>
+<a class="whatsapp-btn" href="https://wa.me/918888239637?text=I want Minimalist Grey Sofa" target="_blank">Order Now</a>
+</div>
+
+<div class="card">
+<img src="https://picsum.photos/400/300?random=23">
+<h3>Sectional Corner Sofa</h3>
+<p>₹29,999</p>
+<a class="whatsapp-btn" href="https://wa.me/918888239637?text=I want Sectional Corner Sofa" target="_blank">Order Now</a>
+</div>
+
+<div class="card">
+<img src="https://picsum.photos/400/300?random=24">
+<h3>Chesterfield Sofa</h3>
+<p>₹44,999</p>
+<a class="whatsapp-btn" href="https://wa.me/918888239637?text=I want Chesterfield Sofa" target="_blank">Order Now</a>
+</div>
+
+<div class="card">
+<img src="https://picsum.photos/400/300?random=25">
+<h3>Luxury U-Shape Sofa</h3>
+<p>₹52,999</p>
+<a class="whatsapp-btn" href="https://wa.me/918888239637?text=I want Luxury U-Shape Sofa" target="_blank">Order Now</a>
+</div>
+
+<div class="card">
+<img src="https://picsum.photos/400/300?random=26">
+<h3>Compact 2+2 Sofa Set</h3>
+<p>₹22,499</p>
+<a class="whatsapp-btn" href="https://wa.me/918888239637?text=I want Compact 2+2 Sofa Set" target="_blank">Order Now</a>
+</div>
+
+<div class="card">
+<img src="https://picsum.photos/400/300?random=27">
+<h3>Premium Wooden Sofa Set</h3>
+<p>₹27,999</p>
+<a class="whatsapp-btn" href="https://wa.me/918888239637?text=I want Premium Wooden Sofa Set" target="_blank">Order Now</a>
+</div>
+
+<div class="card">
+<img src="https://picsum.photos/400/300?random=28">
+<h3>Designer Blue Sofa</h3>
+<p>₹23,999</p>
+<a class="whatsapp-btn" href="https://wa.me/918888239637?text=I want Designer Blue Sofa" target="_blank">Order Now</a>
+</div>
+
+<div class="card">
+<img src="https://picsum.photos/400/300?random=29">
+<h3>Luxury Brown Sofa Set</h3>
+<p>₹31,499</p>
+<a class="whatsapp-btn" href="https://wa.me/918888239637?text=I want Luxury Brown Sofa Set" target="_blank">Order Now</a>
+</div>
+
+<div class="card">
+<img src="https://picsum.photos/400/300?random=30">
+<h3>Elite Premium Sofa Set</h3>
+<p>₹48,999</p>
+<a class="whatsapp-btn" href="https://wa.me/918888239637?text=I want Elite Premium Sofa Set" target="_blank">Order Now</a>
 </div>
 
 </div>
-</section>
-
-<!-- Contact -->
-<section id="contact">
-<h2>Contact Us</h2>
-<p>📞 +91 8888239637</p>
-<p>📍 Pune, Maharashtra</p>
-</section>
-
-<!-- Footer -->
-<footer>
-© 2026 RoyalNest Furniture | All Rights Reserved
-</footer>
-
-<!-- Floating WhatsApp -->
-<a href="https://wa.me/918888239637" class="float" target="_blank">💬</a>
-
-<!-- JS Slider -->
-<script>
-let index = 0;
-const slides = document.querySelectorAll(".slide");
-
-function showSlide() {
-  slides.forEach((slide) => slide.classList.remove("active"));
-  index++;
-  if (index > slides.length) { index = 1; }
-  slides[index-1].classList.add("active");
-  setTimeout(showSlide, 3000);
-}
-
-showSlide();
-</script>
-
-</body>
-</html>
