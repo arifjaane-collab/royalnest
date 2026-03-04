@@ -21,6 +21,33 @@
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
 
 <style>
+    <script>
+let index = 0;
+const slides = document.querySelectorAll(".slide");
+
+function showSlide() {
+  slides.forEach((slide) => slide.classList.remove("active"));
+  index++;
+  if (index > slides.length) { index = 1 }
+  slides[index-1].classList.add("active");
+  setTimeout(showSlide, 3000); // 3 second me slide change
+}
+
+showSli<script>
+let index = 0;
+const slides = document.querySelectorAll(".slide");
+
+function showSlide() {
+  slides.forEach((slide) => slide.classList.remove("active"));
+  index++;
+  if (index > slides.length) { index = 1 }
+  slides[index-1].classList.add("active");
+  setTimeout(showSlide, 3000); // 3 second me slide change
+}
+
+showSlide();
+</script>de();
+</script>
 body {
     margin: 0;
     font-family: 'Poppins', sans-serif;
@@ -51,7 +78,31 @@ nav a {
     margin: 0 20px;
     font-weight: 500;
 }
+<section id="gallery">
+<h2 style="text-align:center; margin-top:50px;">Luxury Sofa Collection</h2>
 
+<div class="slider">
+  <div class="slide active">
+    <img src="https://images.unsplash.com/photo-1586023492125-27b2c045efd7?auto=format&fit=crop&w=1200&q=80" alt="Luxury Sofa 1" style="width:100%; border-radius:15px;">
+    <a class="whatsapp-btn" href="https://wa.me/918888239637?text=I want Luxury Sofa 1" target="_blank">Order Now</a>
+  </div>
+
+  <div class="slide">
+    <img src="https://images.unsplash.com/photo-1615874959474-d609969a20ed?auto=format&fit=crop&w=1200&q=80" alt="Luxury Sofa 2" style="width:100%; border-radius:15px;">
+    <a class="whatsapp-btn" href="https://wa.me/918888239637?text=I want Luxury Sofa 2" target="_blank">Order Now</a>
+  </div>
+
+  <div class="slide">
+    <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1200&q=80" alt="Luxury Sofa 3" style="width:100%; border-radius:15px;">
+    <a class="whatsapp-btn" href="https://wa.me/918888239637?text=I want Luxury Sofa 3" target="_blank">Order Now</a>
+  </div>
+
+  <div class="slide">
+    <img src="https://images.unsplash.com/photo-1582582494700-5b87d8b8a4c6?auto=format&fit=crop&w=1200&q=80" alt="Luxury Sofa 4" style="width:100%; border-radius:15px;">
+    <a class="whatsapp-btn" href="https://wa.me/918888239637?text=I want Luxury Sofa 4" target="_blank">Order Now</a>
+  </div>
+</div>
+</section>
 section {
     padding: 60px 20px;
     text-align: center;
